@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+nav{
+    /* align items in a line */
+    display: flex;  
+    /* place elements one on left and one on right */
+    justify-content: space-between; 
+    /* to align item in center */
+    align-items: center;
+    width: 90%;
+}
+
+.nav-image {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+}
+.listitem{
+    /* same line display */
+    display: inline-block;
+    margin:10px 20px;
+}
+.list{
+    /* to remove underline */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.list:hover{
+    color: red;
+}
+.steve{
+    color: orange;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.title-h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+
+}
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{ 
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover{
+    bottom: 10%;
+}
+
+.images:hover #shape{
+    bottom: 20%;
+}
+
+.images:hover #girl{
+    left: 40%;
+}
+
+#about{
+    margin: 18% 8% 0px 8%;
+}
+#try{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+.about-heading{
+    text-align:center;
+}
+.abouth2{
+    font-size: 20px;
+}
+.abouth4{
+    font-size: 20px;
+    color: green;
+}
+.intro{
+    font-size: 20px;
+    color: green;
+    font-weight: 400;
+}
+.about-img img{
+    width: 80%;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top:30px ;
+    gap: 10px;
+}
+.about-details{
+    font-size: 18px;
+    text-align: justify;
+}
+.information{
+    margin-top:20px;
+}
+.each-info{
+    margin: 10px 0px;
+}
+
+.infospan{
+    margin-left: 15px
+}
+#skills{
+    margin: 7% 8% 0px 8%;
+}
+.skill-heading{
+    text-align: center;
+}
+.skillh2{
+    font-size: 20px;
+}
+.skillh4{
+    color: green;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top:30px ;
+    gap: 10px;
+}
+.bar{
+    margin-left: 70px;
+    padding-left: 40px;
+    margin-top: 100px;
+
+}
+.bar-container{
+    /* to align item in a line */
+    display:flex;
+    /* to place item one on left and one on right */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+.base-bar{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+.orange-bar{
+    width: 95%;
+    background-color: orange;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.skill-image{
+    margin-left: 50px;
+}
+.contact-heading{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.contact-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon-style{
+    font-size: 30px;
+    margin-left: 20px;
+
+}
+/* .icon-style:hover{
+    background-image:linear-gradient();
+    
+
+} */
+.bottom{
+    text-align: center;
+    margin-top: 100px;
+}
+.each-icon:hover{
+    background-image: linear-gradient(to bottom right ,yellow,red);
+}
+.each-icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+.each-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.each-icon i{
+    font-size: 30px;
+    color: black;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    
+}
+
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right ,yellow,red);
+    margin: 0px 10px 50px 0px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+}
+.up-arrow i{
+    margin-left: 12px;
+    margin-top: 10px;
+}
